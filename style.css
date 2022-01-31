@@ -1,0 +1,19 @@
+
+
+
+body {
+	text-align: center;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+	gap: 1rem;
+	justify-content: center;
+}
+
+.card {
+	background: #C1C0BF;
+}
+
+img { max-width: 80%; }
