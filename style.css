@@ -13,7 +13,64 @@ body {
 }
 
 .card {
-	background: #C1C0BF;
+	//background: #C1C0BF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-img { max-width: 80%; }
+.chapter-logo {
+	aspect-ratio: 1 / 1;
+	width: 80%;
+	margin: auto;
+}
+.chapter-logo a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-content: center;
+	place-items: center;
+}
+.chapter-logo img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+
+/* SOC MEDIA ICONS */
+.soc-media-links {
+	display: flex;
+	-ms-flex: 1; /* IE 10 */
+	justify-content: center;
+	gap: .8em;
+}
+
+.icon {
+	text-indent: -999rem;
+	display: inline-block;
+	height: 3em;
+	width: 3em;
+	background-size: cover;
+	filter: saturate(0.4);
+}
+.icon:hover {
+	filter: saturate(1);
+}
+
+.icon.calendar {
+	background-image: url("img/icon-calendar.svg");
+}
+.icon.contact {
+	background-image: url("img/icon-contact.svg");
+}
+.icon.facebook {
+	background-image: url("img/icon-facebook.svg");
+}
+.icon.instagram {
+	background-image: url("img/icon-instagram.svg");
+}
+.icon.twitter {
+	background-image: url("img/icon-twitter.svg");
+}
