@@ -34,8 +34,13 @@ header {
 	color: #fff;
 	padding: 5rem 0 4rem;
 }
+header>* {
+	max-width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+}
 .call-to-actions {
-	max-width: 40rem;
+	width: 40rem;
 	margin: 2.75rem auto 0;
 	text-align: right;
 }
