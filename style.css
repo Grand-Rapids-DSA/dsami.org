@@ -1,3 +1,19 @@
+/* ------------------------- */
+/* COLOR CODES:              */
+/*                           */
+/* #EC1F27	DSA Red          */
+/* #F04C53	DSA Red Tint 1   */
+/* #F4797E	DSA Red Tint 2   */
+/* #F7A5A9	DSA Red Tint 3   */
+/* #FBD2D4	DSA Red Tint 4   */
+/*                           */
+/* #231F20	DSA Black        */
+/* #3B3838	DSA Black Tint 1 */
+/* #605C5C	DSA Black Tint 2 */
+/* #8C8989	DSA Black Tint 3 */
+/* #C1C0BF	DSA Black Tint 4 */
+/* ------------------------- */
+
 html, body { height: 100%; width: 100%; margin: 0; }
 * { box-sizing: border-box; }
 
@@ -8,13 +24,44 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: sans-serif;
 }
+a:focus {
+	outline: 2px solid;
+}
 
+/* HEADER & CALL TO ACTIONS */
 header {
 	background: #EC1F27;
 	color: #fff;
-	padding: 5rem;
+	padding: 5rem 0 4rem;
+}
+.call-to-actions {
+	max-width: 40rem;
+	margin: 2.75rem auto 0;
+	text-align: right;
+}
+.call-to-actions .btn {
+	display: inline-block;
+	padding: .65em 1em .75em;
+	border-radius: .65em;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #fff;
+}
+.call-to-actions .btn:link,
+.call-to-actions .btn:visited {
+	background: #3B3838;
+}
+.call-to-actions .btn:hover {
+	background: #605C5C;
+}
+.call-to-actions .btn:focus {
+	outline: 2px solid #fff;
+}
+.call-to-actions .btn:active {
+	background: #231F20;
 }
 
+/* FOOTER */
 footer {
 	background: #231F20;
 	color: #fff;
@@ -33,7 +80,7 @@ body::after {
 	 */
 }
 
-
+/* CHAPTER CARDS */
 .card-container {
 	margin: 3rem 6rem 6rem;
 	display: grid;
@@ -66,8 +113,6 @@ body::after {
 	max-height: 100%;
 	max-width: 100%;
 }
-
-
 
 /* SOC MEDIA ICONS */
 .soc-media-links {
