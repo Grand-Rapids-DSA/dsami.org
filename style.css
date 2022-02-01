@@ -35,11 +35,10 @@ body::after {
 
 
 .card-container {
-	margin: 3rem auto 6rem;
+	margin: 3rem 6rem 6rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-	column-gap: 1rem;
-	row-gap: 6rem;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	gap: 6rem;
 	justify-content: center;
 }
 
@@ -51,7 +50,8 @@ body::after {
 
 .chapter-logo {
 	aspect-ratio: 1 / 1;
-	width: 80%;
+	max-height: 70vh;
+	max-width: 80%;
 	margin: auto;
 }
 .chapter-logo a {
