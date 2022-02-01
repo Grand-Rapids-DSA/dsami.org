@@ -74,16 +74,29 @@ footer {
 	padding: 2rem;
 }
 body::after {
-	content: "";
-	display: block;
+	display: flex;
+	flex-flow: column;
 	height: 40rem;
 	max-height: 100vh;
+	box-sizing: border-box;
 	background-size: cover;
 	background-position: center;
+	background-color: #231F20;
 	background-image: url("img/michigan-flyover-space.jpg");
 	/* image source: International Space Stations, Jan 30, 2012
 	 * https://www.youtube.com/watch?v=HbBZRj_EkvI
 	 */
+	content: "Image source: International Space Stations, Jan 30, 2012";
+	color: #fff;
+	text-shadow: 0.2em 0.2em #231F20,
+				 0 0 1em #231F20,
+				 0 0 2em #231F20;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: small;
+	text-align: right;
+	place-content: end;
+	padding: 1.5rem 2rem;
 }
 
 /* CHAPTER CARDS */
