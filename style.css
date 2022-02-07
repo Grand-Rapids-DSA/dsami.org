@@ -89,8 +89,8 @@ body::after {
 	content: "Image source: International Space Stations, Jan 30, 2012";
 	color: #fff;
 	text-shadow: 0.2em 0.2em #231F20,
-				 0 0 1em #231F20,
-				 0 0 2em #231F20;
+	             0 0 1em #231F20,
+	             0 0 2em #231F20;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: small;
