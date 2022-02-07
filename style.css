@@ -29,6 +29,17 @@ a:focus {
 	outline: 2px solid;
 }
 
+/* SCROLL-SNAP */
+html {
+	scroll-snap-type: y proximity;
+	scroll-padding-top: 4vh;
+}
+header,
+footer,
+article {
+	scroll-snap-align: start;
+}
+
 /* HEADER & CALL TO ACTIONS */
 header {
 	background: #EC1F27;
