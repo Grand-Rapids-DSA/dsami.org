@@ -14,17 +14,48 @@
 /* #C1C0BF	DSA Black Tint 4 */
 /* ------------------------- */
 
+/* FONTS */
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-black.woff2') format('woff2'),
+		url('fonts/styreneb-black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-bold.woff2') format('woff2'),
+		url('fonts/styreneb-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-regular.woff2') format('woff2'),
+		url('fonts/styreneb-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* GENERAL */
 html, body { height: 100%; width: 100%; margin: 0; }
 * { box-sizing: border-box; }
 
 body {
-	font-family: serif;
+	font-family: "Styrene B", sans-serif;
 	text-align: center;
 	color: #231F20;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: sans-serif;
+
+h1 {
+    font-weight: 900;
 }
+
 a:focus {
 	outline: 2px solid;
 }
@@ -61,7 +92,6 @@ header>* {
 	padding: .65em 1em .75em;
 	border-radius: .65em;
 	text-decoration: none;
-	font-family: sans-serif;
 	color: #fff;
 }
 .call-to-actions .btn:link,
@@ -102,8 +132,6 @@ body::after {
 	text-shadow: 0.2em 0.2em #231F20,
 	             0 0 1em #231F20,
 	             0 0 2em #231F20;
-	font-family: sans-serif;
-	font-weight: bold;
 	font-size: small;
 	text-align: right;
 	place-content: end;
