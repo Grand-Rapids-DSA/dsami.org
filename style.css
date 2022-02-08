@@ -162,7 +162,6 @@ body::after {
 }
 
 .icon {
-	text-indent: -999rem;
 	display: inline-block;
 	height: 3em;
 	width: 3em;
