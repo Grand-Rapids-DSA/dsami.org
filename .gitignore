@@ -1,0 +1,14 @@
+# Windows temp files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# OS X temp files
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+*.swp
+*.lock
+profile
