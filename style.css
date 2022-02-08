@@ -131,16 +131,8 @@ body::after {
 	max-width: 80%;
 	margin: auto;
 }
-.chapter-logo a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	display: grid;
-	place-content: start center;
-	place-items: center;
-}
+
 .chapter-logo img {
-	max-height: 100%;
 	max-width: 100%;
 }
 
