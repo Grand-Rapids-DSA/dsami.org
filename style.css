@@ -74,11 +74,11 @@ header>* {
 .call-to-actions {
 	width: 40rem;
 	margin: 2.75rem auto 0;
-	text-align: right;
+	text-align: center;
 }
 .call-to-actions .btn {
 	display: inline-block;
-	padding: .65em 1em .75em;
+	padding: .75em 1em;
 	border-radius: .65em;
 	text-decoration: none;
 	color: #fff;
