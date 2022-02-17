@@ -14,30 +14,50 @@
 /* #C1C0BF	DSA Black Tint 4 */
 /* ------------------------- */
 
+/* FONTS */
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-black.woff2') format('woff2'),
+		url('fonts/styreneb-black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-bold.woff2') format('woff2'),
+		url('fonts/styreneb-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Styrene B';
+	src: url('fonts/styreneb-regular.woff2') format('woff2'),
+		url('fonts/styreneb-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* GENERAL */
 html, body { height: 100%; width: 100%; margin: 0; }
 * { box-sizing: border-box; }
 
 body {
-	font-family: serif;
+	font-family: "Styrene B", sans-serif;
 	text-align: center;
 	color: #231F20;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: sans-serif;
-}
-a:focus {
-	outline: 2px solid;
+
+h1 {
+    font-weight: 900;
 }
 
-/* SCROLL-SNAP */
-html {
-	scroll-snap-type: y proximity;
-	scroll-padding-top: 4vh;
-}
-header,
-footer,
-article {
-	scroll-snap-align: start;
+a:focus {
+	outline: 2px solid;
 }
 
 /* HEADER & CALL TO ACTIONS */
@@ -54,14 +74,13 @@ header>* {
 .call-to-actions {
 	width: 40rem;
 	margin: 2.75rem auto 0;
-	text-align: right;
+	text-align: center;
 }
 .call-to-actions .btn {
 	display: inline-block;
-	padding: .65em 1em .75em;
+	padding: .75em 1em;
 	border-radius: .65em;
 	text-decoration: none;
-	font-family: sans-serif;
 	color: #fff;
 }
 .call-to-actions .btn:link,
@@ -102,8 +121,6 @@ body::after {
 	text-shadow: 0.2em 0.2em #231F20,
 	             0 0 1em #231F20,
 	             0 0 2em #231F20;
-	font-family: sans-serif;
-	font-weight: bold;
 	font-size: small;
 	text-align: right;
 	place-content: end;
@@ -131,16 +148,8 @@ body::after {
 	max-width: 80%;
 	margin: auto;
 }
-.chapter-logo a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	display: grid;
-	place-content: start center;
-	place-items: center;
-}
+
 .chapter-logo img {
-	max-height: 100%;
 	max-width: 100%;
 }
 
@@ -153,7 +162,6 @@ body::after {
 }
 
 .icon {
-	text-indent: -999rem;
 	display: inline-block;
 	height: 3em;
 	width: 3em;
